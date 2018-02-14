@@ -1,0 +1,43 @@
+body {
+    display: grid;
+    grid-template-areas: "header header header" 
+                         "asideleft main asideright"
+                         "footer footer footer";
+    grid-template-columns: 1fr 550px 1fr;
+    grid-template-rows: 120px 1fr 38px;
+}
+
+header {
+   grid-area: header; 
+}
+main {
+   grid-area: main; 
+}
+asideleft{
+    grid-area: asideleft; 
+}
+asideright{
+    grid-area: asideright; 
+}
+footer {
+   grid-area: footer; 
+}
+
+.menu{
+    display: inline-block;
+}
+.items{
+    height: 43px;
+    line-height: 120px;
+    border-bottom: 50px solid #000d59;
+    padding: 4px 0 0 0;
+    display: inline-block;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.items a{
+    text-decoration: none;
+   color: #fff;  
+   font-size: 20px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
