@@ -1,14 +1,22 @@
 body {
     display: grid;
-    grid-template-areas: "header header header" 
+    grid-template-areas: "logo menu menu" 
                          "asideleft main asideright"
                          "footer footer footer";
     grid-template-columns: 1fr 550px 1fr;
     grid-template-rows: 120px 1fr 38px;
+    grid-column-gap: 10px;
 }
 
-header {
-   grid-area: header; 
+.logo{
+    grid-area: logo;
+    justify-self: end;
+}
+nav {
+   grid-area: menu; 
+}
+nav ul{
+    padding-left: 0;
 }
 main {
    grid-area: main; 
